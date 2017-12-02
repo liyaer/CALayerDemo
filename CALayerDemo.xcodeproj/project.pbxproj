@@ -15,6 +15,9 @@
 		D27CC67E1FD1581800AB9EAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27CC67C1FD1581800AB9EAD /* LaunchScreen.storyboard */; };
 		D27CC6891FD1581800AB9EAD /* CALayerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D27CC6881FD1581800AB9EAD /* CALayerDemoTests.m */; };
 		D27CC6941FD1581900AB9EAD /* CALayerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D27CC6931FD1581900AB9EAD /* CALayerDemoUITests.m */; };
+		D27CC6A41FD2721F00AB9EAD /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = D27CC6A31FD2721F00AB9EAD /* photo.png */; };
+		D27CC6A71FD29F0000AB9EAD /* KCLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D27CC6A61FD29F0000AB9EAD /* KCLayer.m */; };
+		D27CC6AA1FD29FB100AB9EAD /* KCView.m in Sources */ = {isa = PBXBuildFile; fileRef = D27CC6A91FD29FB100AB9EAD /* KCView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		D27CC68F1FD1581900AB9EAD /* CALayerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CALayerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27CC6931FD1581900AB9EAD /* CALayerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerDemoUITests.m; sourceTree = "<group>"; };
 		D27CC6951FD1581900AB9EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D27CC6A31FD2721F00AB9EAD /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
+		D27CC6A51FD29F0000AB9EAD /* KCLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLayer.h; sourceTree = "<group>"; };
+		D27CC6A61FD29F0000AB9EAD /* KCLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLayer.m; sourceTree = "<group>"; };
+		D27CC6A81FD29FB100AB9EAD /* KCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCView.h; sourceTree = "<group>"; };
+		D27CC6A91FD29FB100AB9EAD /* KCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +109,13 @@
 		D27CC66D1FD1581800AB9EAD /* CALayerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D27CC6711FD1581800AB9EAD /* AppDelegate.h */,
-				D27CC6721FD1581800AB9EAD /* AppDelegate.m */,
 				D27CC6741FD1581800AB9EAD /* ViewController.h */,
 				D27CC6751FD1581800AB9EAD /* ViewController.m */,
-				D27CC6771FD1581800AB9EAD /* Main.storyboard */,
-				D27CC67A1FD1581800AB9EAD /* Assets.xcassets */,
-				D27CC67C1FD1581800AB9EAD /* LaunchScreen.storyboard */,
-				D27CC67F1FD1581800AB9EAD /* Info.plist */,
+				D27CC6A51FD29F0000AB9EAD /* KCLayer.h */,
+				D27CC6A61FD29F0000AB9EAD /* KCLayer.m */,
+				D27CC6A81FD29FB100AB9EAD /* KCView.h */,
+				D27CC6A91FD29FB100AB9EAD /* KCView.m */,
+				D27CC6A31FD2721F00AB9EAD /* photo.png */,
 				D27CC66E1FD1581800AB9EAD /* Supporting Files */,
 			);
 			path = CALayerDemo;
@@ -117,6 +124,12 @@
 		D27CC66E1FD1581800AB9EAD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D27CC6711FD1581800AB9EAD /* AppDelegate.h */,
+				D27CC6721FD1581800AB9EAD /* AppDelegate.m */,
+				D27CC6771FD1581800AB9EAD /* Main.storyboard */,
+				D27CC67A1FD1581800AB9EAD /* Assets.xcassets */,
+				D27CC67C1FD1581800AB9EAD /* LaunchScreen.storyboard */,
+				D27CC67F1FD1581800AB9EAD /* Info.plist */,
 				D27CC66F1FD1581800AB9EAD /* main.m */,
 			);
 			name = "Supporting Files";
@@ -247,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D27CC67E1FD1581800AB9EAD /* LaunchScreen.storyboard in Resources */,
+				D27CC6A41FD2721F00AB9EAD /* photo.png in Resources */,
 				D27CC67B1FD1581800AB9EAD /* Assets.xcassets in Resources */,
 				D27CC6791FD1581800AB9EAD /* Main.storyboard in Resources */,
 			);
@@ -273,9 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D27CC6A71FD29F0000AB9EAD /* KCLayer.m in Sources */,
 				D27CC6761FD1581800AB9EAD /* ViewController.m in Sources */,
 				D27CC6731FD1581800AB9EAD /* AppDelegate.m in Sources */,
 				D27CC6701FD1581800AB9EAD /* main.m in Sources */,
+				D27CC6AA1FD29FB100AB9EAD /* KCView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
