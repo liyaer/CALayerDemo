@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D23D047D1FD4DF6E00E4BE2B /* KCLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D23D047A1FD4DF6E00E4BE2B /* KCLayer.m */; };
+		D23D047E1FD4DF6E00E4BE2B /* KCView.m in Sources */ = {isa = PBXBuildFile; fileRef = D23D047C1FD4DF6E00E4BE2B /* KCView.m */; };
+		D23D04801FD4EE5800E4BE2B /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D23D047F1FD4EE5800E4BE2B /* bg.png */; };
 		D27CC6701FD1581800AB9EAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D27CC66F1FD1581800AB9EAD /* main.m */; };
 		D27CC6731FD1581800AB9EAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D27CC6721FD1581800AB9EAD /* AppDelegate.m */; };
 		D27CC6761FD1581800AB9EAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27CC6751FD1581800AB9EAD /* ViewController.m */; };
@@ -16,8 +19,6 @@
 		D27CC6891FD1581800AB9EAD /* CALayerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D27CC6881FD1581800AB9EAD /* CALayerDemoTests.m */; };
 		D27CC6941FD1581900AB9EAD /* CALayerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D27CC6931FD1581900AB9EAD /* CALayerDemoUITests.m */; };
 		D27CC6A41FD2721F00AB9EAD /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = D27CC6A31FD2721F00AB9EAD /* photo.png */; };
-		D27CC6A71FD29F0000AB9EAD /* KCLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D27CC6A61FD29F0000AB9EAD /* KCLayer.m */; };
-		D27CC6AA1FD29FB100AB9EAD /* KCView.m in Sources */ = {isa = PBXBuildFile; fileRef = D27CC6A91FD29FB100AB9EAD /* KCView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D23D04791FD4DF6E00E4BE2B /* KCLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLayer.h; sourceTree = "<group>"; };
+		D23D047A1FD4DF6E00E4BE2B /* KCLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLayer.m; sourceTree = "<group>"; };
+		D23D047B1FD4DF6E00E4BE2B /* KCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCView.h; sourceTree = "<group>"; };
+		D23D047C1FD4DF6E00E4BE2B /* KCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCView.m; sourceTree = "<group>"; };
+		D23D047F1FD4EE5800E4BE2B /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		D27CC66B1FD1581800AB9EAD /* CALayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CALayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27CC66F1FD1581800AB9EAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D27CC6711FD1581800AB9EAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,10 +61,6 @@
 		D27CC6931FD1581900AB9EAD /* CALayerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerDemoUITests.m; sourceTree = "<group>"; };
 		D27CC6951FD1581900AB9EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D27CC6A31FD2721F00AB9EAD /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
-		D27CC6A51FD29F0000AB9EAD /* KCLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLayer.h; sourceTree = "<group>"; };
-		D27CC6A61FD29F0000AB9EAD /* KCLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLayer.m; sourceTree = "<group>"; };
-		D27CC6A81FD29FB100AB9EAD /* KCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCView.h; sourceTree = "<group>"; };
-		D27CC6A91FD29FB100AB9EAD /* KCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D23D04781FD4DF6E00E4BE2B /* 自定义Layer实现渲染 */ = {
+			isa = PBXGroup;
+			children = (
+				D23D04791FD4DF6E00E4BE2B /* KCLayer.h */,
+				D23D047A1FD4DF6E00E4BE2B /* KCLayer.m */,
+				D23D047B1FD4DF6E00E4BE2B /* KCView.h */,
+				D23D047C1FD4DF6E00E4BE2B /* KCView.m */,
+			);
+			path = "自定义Layer实现渲染";
+			sourceTree = "<group>";
+		};
 		D27CC6621FD1581800AB9EAD = {
 			isa = PBXGroup;
 			children = (
@@ -111,11 +124,9 @@
 			children = (
 				D27CC6741FD1581800AB9EAD /* ViewController.h */,
 				D27CC6751FD1581800AB9EAD /* ViewController.m */,
-				D27CC6A51FD29F0000AB9EAD /* KCLayer.h */,
-				D27CC6A61FD29F0000AB9EAD /* KCLayer.m */,
-				D27CC6A81FD29FB100AB9EAD /* KCView.h */,
-				D27CC6A91FD29FB100AB9EAD /* KCView.m */,
+				D23D04781FD4DF6E00E4BE2B /* 自定义Layer实现渲染 */,
 				D27CC6A31FD2721F00AB9EAD /* photo.png */,
+				D23D047F1FD4EE5800E4BE2B /* bg.png */,
 				D27CC66E1FD1581800AB9EAD /* Supporting Files */,
 			);
 			path = CALayerDemo;
@@ -259,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D23D04801FD4EE5800E4BE2B /* bg.png in Resources */,
 				D27CC67E1FD1581800AB9EAD /* LaunchScreen.storyboard in Resources */,
 				D27CC6A41FD2721F00AB9EAD /* photo.png in Resources */,
 				D27CC67B1FD1581800AB9EAD /* Assets.xcassets in Resources */,
@@ -287,11 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D27CC6A71FD29F0000AB9EAD /* KCLayer.m in Sources */,
 				D27CC6761FD1581800AB9EAD /* ViewController.m in Sources */,
 				D27CC6731FD1581800AB9EAD /* AppDelegate.m in Sources */,
 				D27CC6701FD1581800AB9EAD /* main.m in Sources */,
-				D27CC6AA1FD29FB100AB9EAD /* KCView.m in Sources */,
+				D23D047D1FD4DF6E00E4BE2B /* KCLayer.m in Sources */,
+				D23D047E1FD4DF6E00E4BE2B /* KCView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +535,7 @@
 				D27CC69A1FD1581900AB9EAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D27CC69B1FD1581900AB9EAD /* Build configuration list for PBXNativeTarget "CALayerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +544,7 @@
 				D27CC69D1FD1581900AB9EAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D27CC69E1FD1581900AB9EAD /* Build configuration list for PBXNativeTarget "CALayerDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +553,7 @@
 				D27CC6A01FD1581900AB9EAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
