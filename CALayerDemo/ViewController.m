@@ -284,11 +284,13 @@ static CGFloat num;
     gradientLayer.colors = @[(id)[UIColor colorWithWhite:0 alpha:0].CGColor, (id)[UIColor colorWithWhite:0 alpha:0.5].CGColor,(id)[UIColor colorWithWhite:0 alpha:1].CGColor,(id)[UIColor colorWithWhite:0 alpha:0.5].CGColor,(id)[UIColor colorWithWhite:0 alpha:0.0].CGColor];
     
     //简单模拟个动画效果
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^
-    {
-//        gradientLayer.transform = CATransform3DMakeTranslation(150, 0, 0);
-        gradientLayer.transform = CATransform3DTranslate(gradientLayer.transform, 150, 0, 0);
-    });
+    CABasicAnimation *positionBase = [CABasicAnimation animationWithKeyPath:@"position"];
+    [positionBase setToValue:[NSValue valueWithCGPoint:CGPointMake(225, 25/2)]];
+    positionBase.duration = 3.0;
+    positionBase.repeatCount = MAXFLOAT;
+    positionBase.removedOnCompletion = NO;//设置无线循环记得设置成NO
+    positionBase.autoreverses = YES;
+    [gradientLayer addAnimation:positionBase forKey:@"positionBase"];
     
     
     //作为mask层显示的坐标是相对于设置mask的View来说的
@@ -327,13 +329,13 @@ static CGFloat num;
     [self.view addSubview:label];
     
     self.view.backgroundColor = [UIColor blackColor];
-    //模拟一次动画的实现
-    [UIView animateWithDuration:3.0 animations:^
+    //模拟动画的实现
+    [UIView animateWithDuration:3.0 delay:1.0 options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse animations:^
     {
         CGRect Frame = maskView.frame;
         Frame.origin.x = 250;
         maskView.frame = Frame;
-    }];
+    } completion:nil];
 }
 
 
