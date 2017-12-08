@@ -40,7 +40,7 @@ static CGFloat num;
     //CALayer的绘制操作
 //    [self Demo2];
 //    [self Demo2_1];
-//    [self Demo2_2];
+    [self Demo2_2];
 //    [self Demo2_3];
     
     //继承于CALayer的子类的绘制操作，并且阐述了UIView drawRect绘制的本质
@@ -217,7 +217,16 @@ static CGFloat num;
     
     //利用图层形变解决图像倒立问题(2_1中是翻转了Y轴，对于图像来说，就是绕X轴做了个旋转)
 //    layer.transform = CATransform3DMakeRotation(M_PI, 1, 0, 0);和下面一句代码等效
-    [layer setValue:@M_PI forKeyPath:@"transform.rotation.x"];
+//    [layer setValue:@M_PI forKeyPath:@"transform.rotation.x"];
+    
+    //动画效果
+    CABasicAnimation *rotationBase = [CABasicAnimation animationWithKeyPath:@"transform.rotation.x"];
+    [rotationBase setToValue:@M_PI];
+    rotationBase.duration = 3.0;
+    rotationBase.repeatCount = MAXFLOAT;
+    rotationBase.removedOnCompletion = NO;//设置无线循环记得设置成NO
+    rotationBase.autoreverses = YES;
+    [layer addAnimation:rotationBase forKey:@"rotation_x"];
 }
 
 //代理方法：绘制图形、图像到图层，注意参数中的ctx是图层的图形上下文，其中绘图位置也是相对图层而言的
@@ -332,9 +341,15 @@ static CGFloat num;
     //模拟动画的实现
     [UIView animateWithDuration:3.0 delay:1.0 options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse animations:^
     {
-        CGRect Frame = maskView.frame;
-        Frame.origin.x = 250;
-        maskView.frame = Frame;
+        //使用UIView对象实现动画
+//        CGRect Frame = maskView.frame;
+//        Frame.origin.x = 250;
+//        maskView.frame = Frame;
+        
+#warning 虽然maskView.layer 和 gradientLayer是一个对象，但是下面只能使用maskView.layer，只有这样才会受上面3秒动画的约束
+        //使用CALayer对象实现动画
+        [maskView.layer setValue:[NSValue valueWithCGPoint:CGPointMake(225, 25/2)] forKey:@"position"];
+        
     } completion:nil];
 }
 
