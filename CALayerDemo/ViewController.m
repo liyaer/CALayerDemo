@@ -348,7 +348,8 @@ static CGFloat num;
         
 #warning 虽然maskView.layer 和 gradientLayer是一个对象，但是下面只能使用maskView.layer，只有这样才会受上面3秒动画的约束
         //使用CALayer对象实现动画
-        [maskView.layer setValue:[NSValue valueWithCGPoint:CGPointMake(225, 25/2)] forKey:@"position"];
+        //[maskView.layer setValue:[NSValue valueWithCGPoint:CGPointMake(225, 25/2)] forKey:@"position"];
+        maskView.layer.position = CGPointMake(225, 25/2);//和上面键值对设置达到效果一样
         
     } completion:nil];
 }
