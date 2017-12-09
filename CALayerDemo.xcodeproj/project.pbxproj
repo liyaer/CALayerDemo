@@ -10,9 +10,16 @@
 		D23D047D1FD4DF6E00E4BE2B /* KCLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D23D047A1FD4DF6E00E4BE2B /* KCLayer.m */; };
 		D23D047E1FD4DF6E00E4BE2B /* KCView.m in Sources */ = {isa = PBXBuildFile; fileRef = D23D047C1FD4DF6E00E4BE2B /* KCView.m */; };
 		D23D04801FD4EE5800E4BE2B /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D23D047F1FD4EE5800E4BE2B /* bg.png */; };
+		D25E75CF1FDB863900D23D38 /* DrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E75CE1FDB863900D23D38 /* DrawVC.m */; };
+		D25E75D51FDB86B200D23D38 /* ImplicitAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E75D41FDB86B200D23D38 /* ImplicitAnimationVC.m */; };
+		D25E75D81FDB86D700D23D38 /* MaskVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E75D71FDB86D700D23D38 /* MaskVC.m */; };
+		D25E75DB1FDB86E100D23D38 /* TransformVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E75DA1FDB86E100D23D38 /* TransformVC.m */; };
+		D25E75DE1FDB870000D23D38 /* CAReplicatorLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E75DD1FDB870000D23D38 /* CAReplicatorLayerVC.m */; };
+		D25E75E21FDBB2EE00D23D38 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D25E75DF1FDBB2EE00D23D38 /* 1.png */; };
+		D25E75E31FDBB2EE00D23D38 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D25E75E01FDBB2EE00D23D38 /* 2.png */; };
+		D25E75E41FDBB2EE00D23D38 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = D25E75E11FDBB2EE00D23D38 /* 3.png */; };
 		D27CC6701FD1581800AB9EAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D27CC66F1FD1581800AB9EAD /* main.m */; };
 		D27CC6731FD1581800AB9EAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D27CC6721FD1581800AB9EAD /* AppDelegate.m */; };
-		D27CC6761FD1581800AB9EAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27CC6751FD1581800AB9EAD /* ViewController.m */; };
 		D27CC6791FD1581800AB9EAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27CC6771FD1581800AB9EAD /* Main.storyboard */; };
 		D27CC67B1FD1581800AB9EAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D27CC67A1FD1581800AB9EAD /* Assets.xcassets */; };
 		D27CC67E1FD1581800AB9EAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27CC67C1FD1581800AB9EAD /* LaunchScreen.storyboard */; };
@@ -44,12 +51,23 @@
 		D23D047B1FD4DF6E00E4BE2B /* KCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCView.h; sourceTree = "<group>"; };
 		D23D047C1FD4DF6E00E4BE2B /* KCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCView.m; sourceTree = "<group>"; };
 		D23D047F1FD4EE5800E4BE2B /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		D25E75CD1FDB863900D23D38 /* DrawVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawVC.h; sourceTree = "<group>"; };
+		D25E75CE1FDB863900D23D38 /* DrawVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawVC.m; sourceTree = "<group>"; };
+		D25E75D31FDB86B200D23D38 /* ImplicitAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImplicitAnimationVC.h; sourceTree = "<group>"; };
+		D25E75D41FDB86B200D23D38 /* ImplicitAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImplicitAnimationVC.m; sourceTree = "<group>"; };
+		D25E75D61FDB86D700D23D38 /* MaskVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskVC.h; sourceTree = "<group>"; };
+		D25E75D71FDB86D700D23D38 /* MaskVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskVC.m; sourceTree = "<group>"; };
+		D25E75D91FDB86E100D23D38 /* TransformVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformVC.h; sourceTree = "<group>"; };
+		D25E75DA1FDB86E100D23D38 /* TransformVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformVC.m; sourceTree = "<group>"; };
+		D25E75DC1FDB870000D23D38 /* CAReplicatorLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAReplicatorLayerVC.h; sourceTree = "<group>"; };
+		D25E75DD1FDB870000D23D38 /* CAReplicatorLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAReplicatorLayerVC.m; sourceTree = "<group>"; };
+		D25E75DF1FDBB2EE00D23D38 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		D25E75E01FDBB2EE00D23D38 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		D25E75E11FDBB2EE00D23D38 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		D27CC66B1FD1581800AB9EAD /* CALayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CALayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27CC66F1FD1581800AB9EAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D27CC6711FD1581800AB9EAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D27CC6721FD1581800AB9EAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D27CC6741FD1581800AB9EAD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D27CC6751FD1581800AB9EAD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D27CC6781FD1581800AB9EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D27CC67A1FD1581800AB9EAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D27CC67D1FD1581800AB9EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -122,11 +140,23 @@
 		D27CC66D1FD1581800AB9EAD /* CALayerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D27CC6741FD1581800AB9EAD /* ViewController.h */,
-				D27CC6751FD1581800AB9EAD /* ViewController.m */,
+				D27CC6771FD1581800AB9EAD /* Main.storyboard */,
+				D25E75CD1FDB863900D23D38 /* DrawVC.h */,
+				D25E75CE1FDB863900D23D38 /* DrawVC.m */,
 				D23D04781FD4DF6E00E4BE2B /* 自定义Layer实现渲染 */,
+				D25E75D31FDB86B200D23D38 /* ImplicitAnimationVC.h */,
+				D25E75D41FDB86B200D23D38 /* ImplicitAnimationVC.m */,
+				D25E75D61FDB86D700D23D38 /* MaskVC.h */,
+				D25E75D71FDB86D700D23D38 /* MaskVC.m */,
+				D25E75D91FDB86E100D23D38 /* TransformVC.h */,
+				D25E75DA1FDB86E100D23D38 /* TransformVC.m */,
+				D25E75DC1FDB870000D23D38 /* CAReplicatorLayerVC.h */,
+				D25E75DD1FDB870000D23D38 /* CAReplicatorLayerVC.m */,
 				D27CC6A31FD2721F00AB9EAD /* photo.png */,
 				D23D047F1FD4EE5800E4BE2B /* bg.png */,
+				D25E75DF1FDBB2EE00D23D38 /* 1.png */,
+				D25E75E01FDBB2EE00D23D38 /* 2.png */,
+				D25E75E11FDBB2EE00D23D38 /* 3.png */,
 				D27CC66E1FD1581800AB9EAD /* Supporting Files */,
 			);
 			path = CALayerDemo;
@@ -137,7 +167,6 @@
 			children = (
 				D27CC6711FD1581800AB9EAD /* AppDelegate.h */,
 				D27CC6721FD1581800AB9EAD /* AppDelegate.m */,
-				D27CC6771FD1581800AB9EAD /* Main.storyboard */,
 				D27CC67A1FD1581800AB9EAD /* Assets.xcassets */,
 				D27CC67C1FD1581800AB9EAD /* LaunchScreen.storyboard */,
 				D27CC67F1FD1581800AB9EAD /* Info.plist */,
@@ -270,11 +299,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25E75E31FDBB2EE00D23D38 /* 2.png in Resources */,
 				D23D04801FD4EE5800E4BE2B /* bg.png in Resources */,
+				D25E75E41FDBB2EE00D23D38 /* 3.png in Resources */,
 				D27CC67E1FD1581800AB9EAD /* LaunchScreen.storyboard in Resources */,
 				D27CC6A41FD2721F00AB9EAD /* photo.png in Resources */,
 				D27CC67B1FD1581800AB9EAD /* Assets.xcassets in Resources */,
 				D27CC6791FD1581800AB9EAD /* Main.storyboard in Resources */,
+				D25E75E21FDBB2EE00D23D38 /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,9 +331,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D27CC6761FD1581800AB9EAD /* ViewController.m in Sources */,
+				D25E75DB1FDB86E100D23D38 /* TransformVC.m in Sources */,
+				D25E75D81FDB86D700D23D38 /* MaskVC.m in Sources */,
+				D25E75CF1FDB863900D23D38 /* DrawVC.m in Sources */,
+				D25E75D51FDB86B200D23D38 /* ImplicitAnimationVC.m in Sources */,
 				D27CC6731FD1581800AB9EAD /* AppDelegate.m in Sources */,
 				D27CC6701FD1581800AB9EAD /* main.m in Sources */,
+				D25E75DE1FDB870000D23D38 /* CAReplicatorLayerVC.m in Sources */,
 				D23D047D1FD4DF6E00E4BE2B /* KCLayer.m in Sources */,
 				D23D047E1FD4DF6E00E4BE2B /* KCView.m in Sources */,
 			);
